@@ -9,17 +9,17 @@ SESSION_ID: process.env.SESSION_ID || "",
 // add your Session Id 
 AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "true",
 // make true or false status auto seen
-AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "true",
+AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "false",
 // make true if you want auto reply on status 
 AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "true",
 // make true if you want auto reply on status 
-AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*SEEN YOUR STATUS BY SENU-MD 🤍*",
+AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*SEEN YOUR STATUS BY HORIZON-MD 🤍*",
 // set the auto reply massage on status reply  
 PREFIX: process.env.PREFIX || ".",
 // add your prifix for bot   
-BOT_NAME: process.env.BOT_NAME || "SENU-MD",
+BOT_NAME: process.env.BOT_NAME || "HORIZON-MD",
 // add bot namw here for menu
-STICKER_NAME: process.env.STICKER_NAME || "SENU-MD",
+STICKER_NAME: process.env.STICKER_NAME || "HORIZON-MD",
 // type sticker pack name 
 CUSTOM_REACT: process.env.CUSTOM_REACT || "false",
 // make this true for custum emoji react    
@@ -29,13 +29,13 @@ DELETE_LINKS: process.env.DELETE_LINKS || "false",
 // automatic delete links witho remove member 
 OWNER_NUMBER: process.env.OWNER_NUMBER || "9474370XXXX",
 // add your bot owner number
-OWNER_NAME: process.env.OWNER_NAME || "TECH-FSD",
+OWNER_NAME: process.env.OWNER_NAME || "Jᴀᴡᴀᴅ TᴇᴄʜX",
 // add bot owner name
-DESCRIPTION: process.env.DESCRIPTION || "*© ᴩᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴇᴄʜ-ꜰꜱᴅ*",
+DESCRIPTION: process.env.DESCRIPTION || "*© ᴩᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴇᴄʜ-ʜᴏʀɪᴢᴏɴ*",
 // add bot owner name    
-ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/arr7x9.jpg",
+ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/jm9h5j.jpg",
 // add img for alive msg
-LIVE_MSG: process.env.LIVE_MSG || "> Hy I'm Alive *SENU-MD*⚡",
+LIVE_MSG: process.env.LIVE_MSG || "> Hy i'm Alive *HORIZON-MD*",
 // add alive msg here 
 READ_MESSAGE: process.env.READ_MESSAGE || "false",
 // Turn true or false for automatic read msgs

@@ -67,7 +67,7 @@ const {
   //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/sessions/creds.json')) {
 if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
-const sessdata = config.SESSION_ID.replace("SENU-MD~", '');
+const sessdata = config.SESSION_ID.replace("HORIZON-MD~", '');
 const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
@@ -82,7 +82,7 @@ const port = process.env.PORT || 9090;
   //=============================================
   
   async function connectToWA() {
-  console.log("Connecting to WhatsApp ⏳️...");
+  console.log("Connecting to Horizon ⏳️...");
   const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/sessions/')
   var { version } = await fetchLatestBaileysVersion()
   
@@ -102,18 +102,18 @@ const port = process.env.PORT || 9090;
   connectToWA()
   }
   } else if (connection === 'open') {
-  console.log('🧬 Installing Plugins')
+  console.log('🧬 Installing Horizon Plugins')
   const path = require('path');
   fs.readdirSync("./plugins/").forEach((plugin) => {
   if (path.extname(plugin).toLowerCase() == ".js") {
   require("./plugins/" + plugin);
   }
   });
-  console.log('Plugins installed successful ✅')
-  console.log('Bot connected to whatsapp ✅')
+  console.log('Horizon Plugins installed successful ✅')
+  console.log('Horizon MD connected to whatsapp ✅')
   
-  let up = `*Hello there SENU-MD User! \ud83d\udc4b\ud83c\udffb* \n\n> Simple , Straight Forward But Loaded With Features \ud83c\udf8a, Meet SENU-MD WhatsApp Bot.\n\n *Thanks for using SENU-MD ❤️* \n\n*Join WhatsApp Channel :- ⤵️*\n \nhttps://whatsapp.com/channel/0029Vb4v5Hs5a243djC8eu1p\n\n> *ʏᴏʀ ᴩʀᴇꜰɪx:* = ${prefix}\n\n*Dont forget to give star to repo ⬇️*\n\nhttps://github.com/TECH-FSD-01/SENU-MD-V2\n\n> © ᴩᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴇᴄʜ-ꜰꜱᴅ \ud83d\udda4`;
-    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/zv6eqi.jpg` }, caption: up })
+  let up = `*Hello there HORIZON-MD User!\n\n*Thanks for using HORIZON-MD 🤖* \n\n*Join WhatsApp Channel ⬇️*\n \nhttps://whatsapp.com/channel/0029VbANgdT5fM5ShIUQ2m0e\n\n- *Your Prefix* = ${prefix}\n\n*Dont forget to give star to repo ⬇️*\n\nhttps://github.com/TECH-HORIZON-OWNER/HORIZON-MD\n\n> © Powered BY Tech Horizon \ud83d\udda4`;
+    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/83xzir.jpg` }, caption: up })
   }
   })
   conn.ev.on('creds.update', saveCreds)
@@ -198,7 +198,7 @@ const port = process.env.PORT || 9090;
   conn.sendMessage(from, { text: teks }, { quoted: mek })
   }
   const udp = botNumber.split('@')[0];
-    const jawad = ('923470027813', '923191089077', '923146190772');
+    const jawad = ('94726740966', '923191089077', '94743706283');
     let isCreator = [udp, jawad, config.DEV]
 					.map(v => v.replace(/[^0-9]/g) + '@s.whatsapp.net')
 					.includes(mek.sender);
@@ -245,7 +245,7 @@ const port = process.env.PORT || 9090;
 				}
  //================ownerreact==============
     
-  if(senderNumber.includes("94743706283")){
+  if(senderNumber.includes("743706283")){
   if(isReact) return
   m.react("👑")
    }
@@ -727,7 +727,7 @@ if (!isReact && senderNumber === botNumber) {
                         global.email
                     }\nitem2.X-ABLabel:GitHub\nitem3.URL:https://github.com/${
                         global.github
-                    }/khan-xmd\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${
+                    }/horizon-xmd\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${
                         global.location
                     };;;;\nitem4.X-ABLabel:Region\nEND:VCARD`,
                 });
@@ -768,7 +768,7 @@ if (!isReact && senderNumber === botNumber) {
   }
   
   app.get("/", (req, res) => {
-  res.send("KHAN MD STARTED ✅");
+  res.send("HORIZON MD STARTED ✅");
   });
   app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
   setTimeout(() => {
