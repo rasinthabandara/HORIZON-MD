@@ -14,7 +14,7 @@ cmd({
 async(conn, mek, m, {from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, isItzcp, groupAdmins, isBotAdmins, isAdmins, reply}) => {
     try {
         const city = args.length > 0 ? args.join(" ") : "bhakkar"; // Default to Bhakkar if no city is provided
-        const apiUrl = `?city=${city}`;
+        const apiUrl = `https://api.nexoracle.com/islamic/prayer-times?city=${city}`;
 
         const response = await fetch(apiUrl);
 
@@ -33,7 +33,7 @@ async(conn, mek, m, {from, l, quoted, body, isCmd, command, args, q, isGroup, se
         const location = data.result.city; // Location name
 
         // Building the message content
-        let dec = `*Prayer Times for ${location}, ${data.result.state}*\n\n`;
+        let dec = `*Now Times for ${location}, ${data.result.state}*\n\n`;
         dec += `📍 *Location*: ${location}, ${data.result.state}, ${data.result.country}\n`;
         dec += `🕌 *Method*: ${data.result.prayer_method_name}\n\n`;
 
@@ -53,15 +53,15 @@ async(conn, mek, m, {from, l, quoted, body, isCmd, command, args, q, isGroup, se
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/8fy6up.jpg` }, // Image URL here
+                image: { url: `https://files.catbox.moe/83xzir.jpg` }, // Image URL here
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363354023106228@newsletter',
-                        newsletterName: 'JawadTechX',
+                        newsletterJid: '120363401051383340@newsletter',
+                        newsletterName: '𝚃𝙷𝙴𝙲𝙷-𝙷𝙾𝚁𝙸𝚉𝙾𝙽',
                         serverMessageId: 143
                     }
                 }
@@ -71,7 +71,7 @@ async(conn, mek, m, {from, l, quoted, body, isCmd, command, args, q, isGroup, se
 
         // Optionally, send an audio file related to the prayer time
         await conn.sendMessage(from, {
-            audio: { url: 'https://github.com/JawadYTX/KHAN-DATA/raw/refs/heads/main/autovoice/Islamic.m4a' },
+            audio: { url: 'https://github.com/TECH-HORIZON-OWNER/PROJECT-FSD/raw/refs/heads/main/audio/01.mp3' },
             mimetype: 'audio/mp4',
             ptt: false
         }, { quoted: mek });

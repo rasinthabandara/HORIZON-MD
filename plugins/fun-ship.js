@@ -38,8 +38,8 @@ cmd({
         forwardingScore: 999,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-          newsletterJid: "120363377598641244@newsletter",
-          newsletterName: "TECH-FSD",
+          newsletterJid: "120363401051383340@newsletter",
+          newsletterName: "𝚃𝙴𝙲𝙷-𝙷𝙾𝚁𝙸𝚉𝙾𝙽",
           serverMessageId: 143
         }
       }

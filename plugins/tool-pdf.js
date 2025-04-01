@@ -4,7 +4,7 @@ const { Buffer } = require('buffer');
 
 cmd({
     pattern: "topdf",
-    alias: "pdf",
+    alias: ["pdf","topdf"],use: '.topdf',
     desc: "Convert provided text to a PDF file.",
     react: "📄",
     category: "utilities",
@@ -12,7 +12,7 @@ cmd({
 },
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        if (!q) return reply("Please provide the text you want to convert to PDF. *Eg* `.topdf` *Sri Lanka Style 🇱🇰*");
+        if (!q) return reply("Please provide the text you want to convert to PDF. *Eg* `.topdf`");
 
         // Create a new PDF document
         const doc = new PDFDocument();
@@ -25,11 +25,11 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
             await conn.sendMessage(from, {
                 document: pdfData,
                 mimetype: 'application/pdf',
-                fileName: 'TECH-FSD.pdf',
+                fileName: 'JawadTech.pdf',
                 caption: `
 *📄 PDF created successully!*
 
-> © ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴛᴇᴄʜ-ꜰꜱᴅ 💜`
+> © Created By Tech Horizon`
             }, { quoted: mek });
         });
 
@@ -44,3 +44,4 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         reply(`Error: ${e.message}`);
     }
 });
+                      

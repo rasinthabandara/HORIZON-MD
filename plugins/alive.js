@@ -7,34 +7,34 @@ cmd({
     alias: ["status", "runtime", "uptime"],
     desc: "Check uptime and system status",
     category: "main",
-    react: "🔔",
+    react: "👋",
     filename: __filename
 },
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
         // Generate system status message
-        const status = `╭━━〔 *SENU-MD* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• *📊 Uptime*:  ${runtime(process.uptime())} 
-┃◈┃• *📟 Ram usage*: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${(os.totalmem() / 1024 / 1024).toFixed(2)}MB
-┃◈┃• *⚙️ HostName*: ${os.hostname()}
-┃◈┃• *👨‍💻 Owner*: TECH-FSD
-┃◈┃• *🧬 Version*: 2.0.0 BETA
-┃◈└───────────┈⊷
+        const status = `╭━━〔 *HORIZON-MD* 〕━━┈⊷
+┃♔╭─────────────·๏
+┃♔┃• *⏳ Uptime*:  ${runtime(process.uptime())} 
+┃♔┃• *📟 Ram usage*: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${(os.totalmem() / 1024 / 1024).toFixed(2)}MB
+┃♔┃• *⚙️ HostName*: ${os.hostname()}
+┃♔┃• *👨‍💻 Owner*: TECH-SHAN
+┃♔┃• *🧬 Version*: 3.0.0 BETA
+┃♔└───────────┈⊷
 ╰──────────────┈⊷
-> © ᴩᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴇᴄʜ-ꜰꜱᴅ`;
+> © ᴩᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴇᴄʜ-ʜᴏʀɪᴢᴏɴ`;
 
         // Send the status message with an image
         await conn.sendMessage(from, { 
-            image: { url: `https://files.catbox.moe/arr7x9.jpg` },  // Image URL
+            image: { url: `https://files.catbox.moe/83xzir.jpg` },  // Image URL
             caption: status,
             contextInfo: {
                 mentionedJid: [m.sender],
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363377598641244@newsletter',
-                    newsletterName: 'TECH-FSD',
+                    newsletterJid: '120363401051383340@newsletter',
+                    newsletterName: '𝚃𝙴𝙲𝙷-𝙷𝙾𝚁𝙸𝚉𝙾𝙽',
                     serverMessageId: 143
                 }
             }
