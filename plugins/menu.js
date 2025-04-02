@@ -26,7 +26,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ╰━━━━━━━━━━━━━━━┈⊷
 ╭━━〔 *Menu List* 〕━━┈⊷
 ┃♔╭─────────────·๏
-┃♔┃• Quranmenu
+┃♔┃• Lordbuddha
 ┃♔┃• Prayertime
 ┃♔┃• Aimenu
 ┃♔┃• Anmiemenu
@@ -67,7 +67,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
         // Send audio
         await conn.sendMessage(from, {
-            audio: { url: 'https://github.com/XdTechPro/KHAN-DATA/raw/refs/heads/main/autovoice/menunew.m4a' },
+            audio: { url: 'https://github.com/TECH-HORIZON-OWNER/PROJECT-FSD/raw/refs/heads/main/audio/03.mp3' },
             mimetype: 'audio/mp4',
             ptt: true
         }, { quoted: mek });
@@ -456,8 +456,6 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
     try {
         let dec = `╭━━〔 *Other Menu* 〕━━┈⊷
 ┃♔╭─────────────·๏
-┃♔┃• timenow
-┃♔┃• date
 ┃♔┃• count
 ┃♔┃• calculate
 ┃♔┃• countx
