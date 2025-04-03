@@ -43,7 +43,7 @@ const {
   const path = require('path')
   const prefix = config.PREFIX
   
-  const ownerNumber = ['94743706283']
+  const ownerNumber = ['923146190772']
   
   const tempDir = path.join(os.tmpdir(), 'cache-temp')
   if (!fs.existsSync(tempDir)) {
@@ -82,7 +82,7 @@ const port = process.env.PORT || 9090;
   //=============================================
   
   async function connectToWA() {
-  console.log("Connecting to Horizon ⏳️...");
+  console.log("Connecting to WhatsApp ⏳️...");
   const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/sessions/')
   var { version } = await fetchLatestBaileysVersion()
   
@@ -102,17 +102,17 @@ const port = process.env.PORT || 9090;
   connectToWA()
   }
   } else if (connection === 'open') {
-  console.log('🧬 Installing Horizon Plugins')
+  console.log('🧬 Installing Plugins')
   const path = require('path');
   fs.readdirSync("./plugins/").forEach((plugin) => {
   if (path.extname(plugin).toLowerCase() == ".js") {
   require("./plugins/" + plugin);
   }
   });
-  console.log('Horizon Plugins installed successful ✅')
-  console.log('Horizon MD connected to whatsapp ✅')
+  console.log('Plugins installed successful ✅')
+  console.log('Bot connected to whatsapp ✅')
   
-  let up = `*Hello there HORIZON-MD User!\n\n*Thanks for using HORIZON-MD 🤖* \n\n*Join WhatsApp Channel ⬇️*\n \nhttps://whatsapp.com/channel/0029VbANgdT5fM5ShIUQ2m0e\n\n- *Your Prefix* = ${prefix}\n\n*Dont forget to give star to repo ⬇️*\n\nhttps://github.com/TECH-HORIZON-OWNER/HORIZON-MD\n\n> © Powered BY Tech Horizon \ud83d\udda4`;
+  let up = `*Hello there HORIZON-MD User!*\n\n*Thanks for using HORIZON-MD 🤖* \n\n*Join WhatsApp Channel ⬇️*\n \nhttps://whatsapp.com/channel/0029VbANgdT5fM5ShIUQ2m0e\n\n- *Your Prefix* = ${prefix}\n\n*Dont forget to give star to repo ⬇️*\n\nhttps://github.com/TECH-HORIZON-OWNER/HORIZON-MD\n\n> © Powered BY Tech Horizon \ud83d\udda4`;
     conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/83xzir.jpg` }, caption: up })
   }
   })
@@ -198,7 +198,7 @@ const port = process.env.PORT || 9090;
   conn.sendMessage(from, { text: teks }, { quoted: mek })
   }
   const udp = botNumber.split('@')[0];
-    const jawad = ('94726740966', '923191089077', '94743706283');
+    const jawad = ('923470027813', '923191089077', '923146190772');
     let isCreator = [udp, jawad, config.DEV]
 					.map(v => v.replace(/[^0-9]/g) + '@s.whatsapp.net')
 					.includes(mek.sender);
@@ -245,9 +245,9 @@ const port = process.env.PORT || 9090;
 				}
  //================ownerreact==============
     
-  if(senderNumber.includes("743706283")){
+  if(senderNumber.includes("923146190772")){
   if(isReact) return
-  m.react("👑")
+  m.react("🦋")
    }
   //==========public react============//
   // Auto React 
@@ -727,7 +727,7 @@ if (!isReact && senderNumber === botNumber) {
                         global.email
                     }\nitem2.X-ABLabel:GitHub\nitem3.URL:https://github.com/${
                         global.github
-                    }/horizon-xmd\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${
+                    }/horizon-md\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${
                         global.location
                     };;;;\nitem4.X-ABLabel:Region\nEND:VCARD`,
                 });
