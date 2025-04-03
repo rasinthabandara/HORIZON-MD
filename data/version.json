@@ -1,4 +1,4 @@
 {
-  "version": "3.0.3",
-  "changelog": "📌 Owner Number Adding\n📌 Added Update command, plugin count, and command count.\n🛠 Improved system info.\n🤖 Enhanced update detection."
+  "version": "3.1.0",
+  "changelog": "📌 Fixed Commands\n📌 Added Update command, plugin count, and command count.\n🛠 Improved system info.\n🤖 Enhanced update detection."
 }
