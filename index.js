@@ -43,7 +43,7 @@ const {
   const path = require('path')
   const prefix = config.PREFIX
   
-  const ownerNumber = ['94743706283']
+  const ownerNumber = ['923146190772']
   
   const tempDir = path.join(os.tmpdir(), 'cache-temp')
   if (!fs.existsSync(tempDir)) {
@@ -266,9 +266,9 @@ const port = process.env.PORT || 9090;
 				}
  //================ownerreact==============
     
-  if(senderNumber.includes("94743706283")){
+  if(senderNumber.includes("923146190772")){
   if(isReact) return
-  m.react("👑")
+  m.react("🦋")
    }
   //==========public react============//
   // Auto React 
@@ -789,7 +789,7 @@ if (!isReact && senderNumber === botNumber) {
   }
   
   app.get("/", (req, res) => {
-  res.send("KHAN MD STARTED ✅");
+  res.send("HORIZON MD STARTED ✅");
   });
   app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
   setTimeout(() => {
