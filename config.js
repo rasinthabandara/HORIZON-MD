@@ -35,7 +35,7 @@ DESCRIPTION: process.env.DESCRIPTION || "*© ᴩᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴇᴄ
 // add bot owner name    
 ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/jm9h5j.jpg",
 // add img for alive msg
-LIVE_MSG: process.env.LIVE_MSG || "> Hy i'm Alive *HORIZON-MD*",
+ALIVE_MSG: process.env.ALIVE_MSG || "> Hy i'm Alive *HORIZON-MD*",
 // add alive msg here 
 READ_MESSAGE: process.env.READ_MESSAGE || "false",
 // Turn true or false for automatic read msgs
