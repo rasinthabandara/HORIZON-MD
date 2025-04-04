@@ -23,8 +23,6 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃✦└───────────┈⊷
 ╰──────────────┈⊷
 
-I'm Alive HORIZON MD 👋😸
-
 > © ᴩᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴇᴄʜ-ʜᴏʀɪᴢᴏɴ`;
 
         // Send the status message with an image
