@@ -1,7 +1,7 @@
 {
   "name": "HORIZON-MD",
-  "description": "WhatsApp bot made by Tech Horizon",
-  "logo": "https://raw.githubusercontent.com/TECH-HORIZON-OWNER/PROJECT-FSD/refs/heads/main/images/1742748219892.jpg",
+  "description": "Javascript WhatsApp bot made by Tech Shan",
+  "logo": "https://raw.githubusercontent.com/XdTechPro/KHAN-DATA/refs/heads/main/logo/KHAN.png",
   "keywords": ["HORIZON-MD"],
   "success_url": "/",
 
@@ -16,7 +16,7 @@
     "STICKER_NAME": {
       "description": "type your sticker pack name.",
       "required": false,
-      "value": "HORIZON-MD"
+      "value": "HORIZO-MD"
     }, 
       
     "PREFIX": {
@@ -79,14 +79,14 @@
     "AUTO_STATUS_MSG": {
       "description": "Type custom message on status reply",
       "required": true,
-      "value": "*SEEN YOUR STATUS BY HORIZON-MD 🤗*"
+      "value": "*SEEN YOUR STATUS BY HORIZON-MD 👑*"
    
      }, 
     
     "OWNER_NAME": {
       "description": "Type Bot Owner Name.",
       "required": false,
-      "value": "Tech Horizon"
+      "value": "TECH SHAN"
 }, 
 
     "OWNER_NUMBER": {
@@ -119,7 +119,7 @@
      "DESCRIPTION": {
       "description": "add caption for menu and other",
       "required": false,
-      "value": "*© ᴩᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴇᴄʜ-ʜᴏʀɪᴢᴏɴ*"
+      "value": "*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴡᴀᴅ TᴇᴄʜX*"
     },
 
       "DELETE_LINKS": {
