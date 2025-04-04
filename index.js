@@ -112,8 +112,29 @@ const port = process.env.PORT || 9090;
   console.log('Plugins installed successful ✅')
   console.log('Bot connected to whatsapp ✅')
   
-  let up = `*Thanks for using HORIZON-MD 🤖* \n\n*Join WhatsApp Channel ⬇️*\n \nhttps://whatsapp.com/channel/0029VbANgdT5fM5ShIUQ2m0e\n\n- *Your Prefix* = ${prefix}\n\n*Dont forget to give star to repo ⬇️*\n\nhttps://github.com/TECH-HORIZON-OWNER/HORIZON-MD\n\n> © Powered BY Tech Horizon \ud83d\udda4`;
-    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/83xzir.jpg` }, caption: up })
+  let up = `*𝐇𝐎𝐑𝐈𝐙𝐎𝐍 𝐌𝐃 𝐕𝟑*
+
+𝙷𝚎𝚕𝚕𝚘🤩, 𝙲𝚘𝚗𝚐𝚛𝚊𝚝𝚜 𝚢𝚘𝚞 𝚑𝚊𝚟𝚎 𝚜𝚞𝚌𝚌𝚎𝚜𝚜𝚏𝚞𝚕𝚕𝚢 𝚍𝚎𝚙𝚕𝚘𝚢𝚎𝚍 *𝙷𝙾𝚁𝙸𝚉𝙾𝙽 𝙼𝙳 𝙱𝙾𝚃*
+
+*✅𝙱𝚘𝚝 𝙲𝚘𝚗𝚗𝚎𝚌𝚝𝚒𝚘𝚗 𝚂𝚝𝚊𝚝𝚞𝚜:* 
+  *𝙷𝙾𝚁𝙸𝚉𝙾𝙽 𝙼𝙳 𝙱𝙾𝚃* 𝚒𝚜 𝚗𝚘𝚠 𝚌𝚘𝚗𝚗𝚎𝚌𝚝𝚎𝚍 𝚝𝚘 𝚝𝚑𝚒𝚜 𝚍𝚎𝚟𝚒𝚌𝚎
+
+ ⚙️ *𝙿𝚛𝚎𝚏𝚒𝚡:* ${prefix}(Use the bot’s prefix for commands) 
+
+*👨‍💻 𝙲𝚛𝚎𝚊𝚝𝚘𝚛:* *𝚃𝙴𝙲𝙷 𝚂𝙷𝙰𝙽* 
+*🏢 𝙾𝚛𝚐𝚊𝚗𝚒𝚣𝚊𝚝𝚒𝚘𝚗:* *𝚃𝙴𝙲𝙷 𝙷𝙾𝚁𝙸𝚉𝙾𝙽 𝚂𝙲𝙷𝙾𝙾𝙻 𝙸𝙽𝙲.* 
+*🗓️ 𝙲𝚛𝚎𝚊𝚝𝚎𝚍:* *2025*
+
+ 🌟 *𝙵𝚘𝚕𝚕𝚘𝚠 𝚘𝚞𝚛 𝚆𝚑𝚊𝚝𝚜𝙰𝚙𝚙 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 𝚏𝚘𝚛 𝚞𝚙𝚍𝚊𝚝𝚎𝚜 ⬇️* 
+ https://whatsapp.com/channel/0029VbANgdT5fM5ShIUQ2m0e 
+
+*🔄 𝙽𝚎𝚠 𝚏𝚎𝚊𝚝𝚞𝚛𝚎𝚜 𝚌𝚘𝚖𝚒𝚗𝚐 𝚜𝚘𝚘𝚗.𝚂𝚝𝚊𝚢 𝚝𝚞𝚗𝚎𝚍!* 
+
+𝐇𝐎𝐑𝐈𝐙𝐎𝐍 𝐌𝐃 𝐕𝟑
+
+> *𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𝚃𝙴𝙲𝙷 𝚂𝙷𝙰𝙽*
+> *𝙵𝙾𝚄𝙽𝙳𝙴𝚁 𝙾𝙵 𝚃𝙴𝙲𝙷 𝙷𝙾𝚁𝙸𝚉𝙾𝙽 𝚂𝙲𝙷𝙾𝙾𝙻 𝙸𝙽𝙲*`;
+    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/phywyo.jpg` }, caption: up })
   }
   })
   conn.ev.on('creds.update', saveCreds)
@@ -198,7 +219,7 @@ const port = process.env.PORT || 9090;
   conn.sendMessage(from, { text: teks }, { quoted: mek })
   }
   const udp = botNumber.split('@')[0];
-    const jawad = ('94726740966', '9472838808', '94720463658');
+    const jawad = ('923470027813', '923191089077', '923146190772');
     let isCreator = [udp, jawad, config.DEV]
 					.map(v => v.replace(/[^0-9]/g) + '@s.whatsapp.net')
 					.includes(mek.sender);
@@ -727,7 +748,7 @@ if (!isReact && senderNumber === botNumber) {
                         global.email
                     }\nitem2.X-ABLabel:GitHub\nitem3.URL:https://github.com/${
                         global.github
-                    }/horizon-md\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${
+                    }/khan-xmd\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${
                         global.location
                     };;;;\nitem4.X-ABLabel:Region\nEND:VCARD`,
                 });
@@ -768,7 +789,7 @@ if (!isReact && senderNumber === botNumber) {
   }
   
   app.get("/", (req, res) => {
-  res.send("HORIZON MD STARTED ✅");
+  res.send("KHAN MD STARTED ✅");
   });
   app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
   setTimeout(() => {
