@@ -22,7 +22,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃✦│ Platform : *Pannel*
 ┃✦│ Mode : *[${config.MODE}]*
 ┃✦│ Prifix : *[${config.PREFIX}]*
-┃✦│ Version : *${localVersion}*
+┃✦│ Version : *3.0.0 BETA*
 ┃✦╰──────────────
 ╰━━━━━━━━━━━━━━━┈⊷
 ╭━━〔 *Owner Menu* 〕━━┈⊷
