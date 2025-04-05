@@ -57,7 +57,7 @@
 
 ## HORIZON MD ERROR SUPPORT BOT
 
-<a href="https://wa.me/94724884317?text=Pricelist"><img src="" alt="HORIZON MD ERROR SUPPORT" width="150"></a>
+<a href="https://wa.me/94743706283?text=.support"><img src="" alt="HORIZON MD ERROR SUPPORT" width="150"></a>
 </br>
 <img src="https://files.catbox.moe/xrvgvq.jpg" height="100%" width="100%">
 <br>
