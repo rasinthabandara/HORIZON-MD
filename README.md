@@ -1,5 +1,5 @@
 
-<h1 align="center">HORIZON-MD 3.O.0</h1>
+<h1 align="center">HORIZON-MD 3.0.0</h1>
 
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
 
@@ -42,7 +42,7 @@
 
   </a>
   <a href="https://github.com/TECH-HORIZON-OWNER/HORIZON-MD">
-    <img src="https://img.shields.io/static/v1?label=Author&message=Vajira%20Rathnayake&color=purple&style=plastic">
+    <img src="https://img.shields.io/static/v1?label=Author&message=TECH%20SHAN&color=purple&style=plastic">
 
   </a>
   </p>
@@ -57,7 +57,7 @@
 
 ## HORIZON MD ERROR SUPPORT BOT
 
-<a href="https://goto.now/3NtN2"><img src="" alt="HORIZON MD ERROR SUPPORT" width="150"></a>
+<a href="https://wa.me/94724884317?text=Pricelist"><img src="" alt="HORIZON MD ERROR SUPPORT" width="150"></a>
 </br>
 <img src="https://files.catbox.moe/xrvgvq.jpg" height="100%" width="100%">
 <br>
