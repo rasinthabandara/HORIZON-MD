@@ -1,15 +1,15 @@
-const { cmd } = require("../command");
-const yts = require("yt-search");
-const axios = require("axios");
+const config = require('../config');
+const { cmd } = require('../command');
+const { ytsearch, ytmp3, ytmp4 } = require('@dark-yasiya/yt-dl.js');
 
 // song download
 cmd({ 
     pattern: "song2", 
-    alias: ["song", "play"], 
+    alias: ["yta", "play"], 
     react: "🎶", 
     desc: "Download YouTube song", 
     category: "main", 
-    use: '.song < Yt url or Song Name >', 
+    use: '.song < Yt url or Name >', 
     filename: __filename 
 }, async (conn, mek, m, { from, prefix, quoted, q, reply }) => { 
     try { 
@@ -28,32 +28,42 @@ cmd({
             return reply("Failed to fetch the audio. Please try again later.");
         }
         
-        let ytmsg = `╭━━━〔 *SONG DOWNLODER* 〕━━━┈⊷
-┃✦╭──────────────
-┃✦│ *Title:* *${yts.title}*
-┃✦│ *Author:* *${yts.author.name}*
-┃✦│ *Views:* *${yts.views}*
-┃✦│ *Duration:* *${yts.timestamp}*
-┃✦│ *Link:* *${yts.url}*
-┃✦╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷✪
-╭━━━〔 *REPLAY BELOW NUMBER* 〕━━━┈⊷
-┃✰╭──────────────
-┃✰│ 1 AUDIO DOWNLOAD
-┃✰│ 2 VOICE DOWNLOAD
-┃✰│ 3 DOCUMENT DOWNLOAD
-┃✰╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷✪
+        let ytmsg = `*〘〘 𝐀𝐔𝐃𝐈𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑 〙〙*
 
-> *© ᴩᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴇᴄʜ-ʜᴏʀɪᴢᴏɴ*`;
+*◈=========================◈*
+*╭┈──────────────────┈⊷*
+*┃* 🎶 *Title:* *${yts.title}*
+*┃* 
+*┃* ⏳ *Duration:* *${yts.timestamp}*
+*┃* 
+*┃* 👀 *Views:* *${yts.views}*
+*┃* 
+*┃* 👤 *Author:* *${yts.author.name}*
+*┃* 
+*┃* 🔗 *Link:* *${yts.url}*
+*╰────────────────────┈⊷*
+
+*⦁⦂⦁━┉━┉━┉━┉━┉━┉━┉━┉━┉━⦁⦂⦁*
+
+*🔢 Reply below number*
+
+*╭┈─────────────────┈⊷*
+*┃1 │❯❯◦ AUDIO DOWNLOAD* 🎶
+*┃2 │❯❯◦ VOICE DOWNLOAD* 🎤
+*┃3 │❯❯◦ DOCUMENT DOWNLOAD* 📁
+*╰───────────────────┈⊷*
+
+*Github Repo:* *https://github.com/deviltech567/DEVIL-TECH-MD*
+
+*㊛ Ꮲᴏꪝᴇʀᴅ Вʏ Ꭰᴇᴠɪʟ Ꭲᴇᴄʜ Ꮇᴅ*`;
         
         let contextInfo = {
             mentionedJid: [m.sender],
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363401051383340@newsletter',
-                newsletterName: '𝚃𝙴𝙲𝙷-𝙷𝙾𝚁𝙸𝚉𝙾𝙽',
+                newsletterJid: '120363395467876104@newsletter',
+                newsletterName: '𝐃𝐄𝐕𝐈𝐋 𝐓𝐄𝐂𝐇 𝐌𝐃',
                 serverMessageId: 143
             }
         };
@@ -100,4 +110,4 @@ cmd({
         console.log(e);
         reply("An error occurred. Please try again later.");
     }
-});
+});  
