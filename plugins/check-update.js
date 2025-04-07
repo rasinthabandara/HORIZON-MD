@@ -95,7 +95,7 @@ Use *.update* to update.`;
 ✪⦁⦂⦁━━━━━━━━━━━━━━━━━⦁⦂⦁✪
 ╭━━━〔 *NEW UPDATE DETAILS* 〕━━━┈⊷
 ┃✦╭──────────────
-┃✦│ *Changelog:* ${latestChangelog}
+┃✦│ ${latestChangelog}
 ┃✦╰──────────────
 ╰━━━━━━━━━━━━━━━┈⊷
 ✪⦁⦂⦁━━━━━━━━━━━━━━━━━⦁⦂⦁✪
