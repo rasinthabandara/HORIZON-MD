@@ -1,5 +1,5 @@
 
-<h1 align="center">HORIZON-MD 3.0.0</h1>
+<h1 align="center">HORIZON-MD V1.0.0</h1>
 
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
 
