@@ -112,7 +112,7 @@ const port = process.env.PORT || 9090;
   console.log('Plugins installed successful ✅')
   console.log('Bot connected to whatsapp ✅')
   
-  let up = `*𝐇𝐎𝐑𝐈𝐙𝐎𝐍 𝐌𝐃 𝐕𝟑*
+  let up = `*𝐇𝐎𝐑𝐈𝐙𝐎𝐍 𝐌𝐃 𝐕𝟏*
 
 𝙷𝚎𝚕𝚕𝚘🤩, 𝙲𝚘𝚗𝚐𝚛𝚊𝚝𝚜 𝚢𝚘𝚞 𝚑𝚊𝚟𝚎 𝚜𝚞𝚌𝚌𝚎𝚜𝚜𝚏𝚞𝚕𝚕𝚢 𝚍𝚎𝚙𝚕𝚘𝚢𝚎𝚍 *𝙷𝙾𝚁𝙸𝚉𝙾𝙽 𝙼𝙳 𝙱𝙾𝚃*
 
@@ -130,7 +130,7 @@ const port = process.env.PORT || 9090;
 
 *🔄 𝙽𝚎𝚠 𝚏𝚎𝚊𝚝𝚞𝚛𝚎𝚜 𝚌𝚘𝚖𝚒𝚗𝚐 𝚜𝚘𝚘𝚗.𝚂𝚝𝚊𝚢 𝚝𝚞𝚗𝚎𝚍!* 
 
-𝐇𝐎𝐑𝐈𝐙𝐎𝐍 𝐌𝐃 𝐕𝟑
+𝐇𝐎𝐑𝐈𝐙𝐎𝐍 𝐌𝐃 𝐕𝟏
 
 > *𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𝚃𝙴𝙲𝙷 𝚂𝙷𝙰𝙽*
 > *𝙵𝙾𝚄𝙽𝙳𝙴𝚁 𝙾𝙵 𝚃𝙴𝙲𝙷 𝙷𝙾𝚁𝙸𝚉𝙾𝙽 𝚂𝙲𝙷𝙾𝙾𝙻 𝙸𝙽𝙲*`;
@@ -292,7 +292,7 @@ const port = process.env.PORT || 9090;
           const randomOwnerReaction = reactions[Math.floor(Math.random() * reactions.length)]; // 
           m.react(randomOwnerReaction);
       }
-  }
+  }          
           
 // custum react settings        
                         
@@ -313,7 +313,7 @@ if (!isReact && senderNumber === botNumber) {
         m.react(randomReaction);
     }
 } 
-        
+       
   //==========WORKTYPE============ 
   if(!isOwner && config.MODE === "private") return
   if(!isOwner && isGroup && config.MODE === "inbox") return
@@ -791,7 +791,7 @@ if (!isReact && senderNumber === botNumber) {
         };
     conn.serializeM = mek => sms(conn, mek, store);
   }
-  
+       
   app.get("/", (req, res) => {
   res.send("HORIZON MD STARTED ✅");
   });
