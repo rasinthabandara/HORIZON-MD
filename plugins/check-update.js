@@ -58,18 +58,48 @@ cmd({
     // Check update status
     let updateMessage = `✅ Your HORIZON-MD bot is up-to-date!`;
     if (localVersion !== latestVersion) {
-      updateMessage = `🧾 Your HORIZON-MD bot is outdated!
-🔹 *Current Version:* ${localVersion}
-🔹 *Latest Version:* ${latestVersion}
+      updateMessage = `╭━━━〔 *🧾 BOT IS OUTDATED!* 〕━━━┈⊷
+┃✦╭──────────────
+┃✦│ *Current Version:* ${localVersion}
+┃✦│ *Latest Version:* ${latestVersion}
+┃✦╰──────────────
+╰━━━━━━━━━━━━━━━┈⊷
 
 Use *.update* to update.`;
     }
 
-    const statusMessage = `🌟 *Good ${new Date().getHours() < 12 ? 'Morning' : 'Night'}, ${pushname}!* 🌟\n\n` +
-      `📌 *Bot Name:* HORIZON-MD\n🔖 *Current Version:* ${localVersion}\n📢 *Latest Version:* ${latestVersion}\n📂 *Total Plugins:* ${pluginCount}\n🔢 *Total Commands:* ${totalCommands}\n\n` +
-      `💾 *System Info:*\n⏳ *Uptime:* ${uptime}\n📟 *RAM Usage:* ${ramUsage}MB / ${totalRam}MB\n⚙️ *Host Name:* ${hostName}\n📅 *Last Update:* ${lastUpdate}\n\n` +
-      `📝 *Changelog:*\n${latestChangelog}\n\n` +
-      `⭐ *GitHub Repo:* ${githubRepo}\n👤 *Owner:* [TECH-SHAN](https://github.com/TECH-HORIZON-OWNER)\n\n${updateMessage}\n\n🚀 *Hey! Don't forget to fork & star the repo!*`;
+    const statusMessage = `🌟 *Good ${new Date().getHours() < 12 ? 'Morning' : 'Night'}, ${pushname}!* 🌟
+
+*BOT NAME:* HORIZON MD
+*GITHUB REPO:* ${githubRepo}
+*OWNER:* TECH SHAN(https://github.com/TECH-HORIZON-OWNER)
+*FOUNDER OF TECH HORIZON SCHOOL INC*
+
+╭━━━〔 *SYSTEM INFO* 〕━━━┈⊷
+┃✦╭──────────────
+┃✦│ *Uptime:* ${uptime}
+┃✦│ *Total Plugins:* ${pluginCount}
+┃✦│ *Total Commands:* ${totalCommands}
+┃✦│ *Ram Usage:*  ${ramUsage}MB / ${totalRam}MB
+┃✦│ *Host Name:* ${hostName}
+┃✦╰──────────────
+╰━━━━━━━━━━━━━━━┈⊷    
+✪⦁⦂⦁━━━━━━━━━━━━━━━━━⦁⦂⦁✪
+╭━━━〔 *BOT VERSION* 〕━━━┈⊷
+┃✦╭──────────────
+┃✦│ *Current Version:* ${localVersion}
+┃✦│ *Last Update:* ${lastUpdate}
+┃✦│ *Latest Version:* ${latestVersion}
+┃✦╰──────────────
+╰━━━━━━━━━━━━━━━┈⊷
+✪⦁⦂⦁━━━━━━━━━━━━━━━━━⦁⦂⦁✪
+╭━━━〔 *NEW UPDATE DETAILS* 〕━━━┈⊷
+┃✦╭──────────────
+┃✦│ *Changelog:* ${latestChangelog}
+┃✦╰──────────────
+╰━━━━━━━━━━━━━━━┈⊷
+✪⦁⦂⦁━━━━━━━━━━━━━━━━━⦁⦂⦁✪
+${updateMessage}\n\n*Hey! Don't forget to fork & star the repo!*\n\n> *© ᴩᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴇᴄʜ-ʜᴏʀɪᴢᴏɴ*`;
 
     // Send the status message with an image
     await conn.sendMessage(from, {
